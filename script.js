@@ -61,7 +61,7 @@ reques.open("GET","https://restcountries.com/v3.1/all");
 reques.send();
 reques.onload=function(){
     var resul=JSON.parse(reques.response);
-    var total = resul.reduce((acc,curr) =>acc+curr.population,0);
+    var total=resul.reduce((acc,curr) =>acc+curr.population,0);
 
     console.log(total);
  
